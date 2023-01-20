@@ -157,7 +157,7 @@ impl RecordKind {
             RData::SOA(..) => {
                 RecordKind::Unimplemented("SOA record handling is not implemented".into())
             }
-            RData::Unknown(data) => RecordKind::Unimplemented(data.to_owned()),
+            RData::Unknown(_, data) => RecordKind::Unimplemented(data.to_owned()),
         }
     }
 }

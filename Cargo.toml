@@ -18,11 +18,12 @@ categories = ["network-programming"]
 keywords = ["mdns", "dns", "multicast", "chromecast", "discovery"]
 
 [dependencies]
-dns-parser = "0.8.0"
+# dns-parser = "0.8.0"
+dns-parser = { git = "https://github.com/milenkovicm/dns-parser.git" }
 net2 = "0.2"
-err-derive = "0.2.1"
+err-derive = "0.3.1"
 futures-core = "0.3.1"
 futures-util = "0.3.1"
 log = "0.4"
-async-stream = "0.2.0"
+async-stream = "0.3.3"
 async-std = { version = "1.6.2", features = ["unstable", "attributes"] }
